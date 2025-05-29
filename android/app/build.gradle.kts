@@ -36,8 +36,17 @@ android {
         release {
             // Use your own signing config here
             signingConfig = signingConfigs.getByName("debug")
+
             // Optional: Enable ProGuard or R8 for release
-            isMinifyEnabled = false
+            // Fix for your error:
+            isMinifyEnabled = true        // Enable code shrinking
+            isShrinkResources = true      // Enable resource shrinking (optional but usually true)
+        
+            // Optional: use ProGuard or R8 config file
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
 }
