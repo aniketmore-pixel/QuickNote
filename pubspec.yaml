@@ -96,7 +96,3 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 
-
-dependency_overrides:
-  isar_flutter_libs:
-    path: packages/isar_flutter_libs
