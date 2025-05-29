@@ -9,7 +9,7 @@ android {
     namespace = "com.example.quicknote"
 
     // Set compileSdk to 34 or higher (your plugins want 34 or 35)
-    compileSdk = 34
+    compileSdk = 35
 
     // Set the NDK version to what your plugins require (27.0.12077973)
     ndkVersion = "27.0.12077973"
@@ -26,7 +26,7 @@ android {
     defaultConfig {
         applicationId = "com.example.quicknote"
         minSdk = 21        // or flutter.minSdkVersion if it's >=16
-        targetSdk = 34        // match compileSdk
+        targetSdk = 35      // match compileSdk
 
         versionCode = 1       // Or your flutter.versionCode if defined
         versionName = "1.0"   // Or your flutter.versionName if defined
