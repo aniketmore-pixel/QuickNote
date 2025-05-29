@@ -25,7 +25,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.quicknote"
-        minSdk = 16           // or flutter.minSdkVersion if it's >=16
+        minSdk = 21        // or flutter.minSdkVersion if it's >=16
         targetSdk = 34        // match compileSdk
 
         versionCode = 1       // Or your flutter.versionCode if defined
