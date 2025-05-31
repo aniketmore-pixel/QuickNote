@@ -1,0 +1,11 @@
+workflows:
+  android-build:
+    name: Android Debug Build
+    environment:
+      flutter: stable
+      android:
+        gradle_version: 7.6
+        android_gradle_plugin_version: 7.4.2
+    scripts:
+      - name: Build debug APK
+        script: flutter build apk --debug
